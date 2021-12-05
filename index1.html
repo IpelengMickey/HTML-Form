@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Meet and greet</title>
+	<script>
+		function madume()
+		{
+			var greet = prompt("Enter your name (kwala leina la gago): ");
+			
+			if (greet != "")
+			{
+				document.getElementById("leina").innerHTML = "Hello/Dumela " + greet;
+			}else
+			{
+				alert("Ke kopa leina/Your name please");
+			}
+		}
+	</script>
+  </head>
+  <body onload="alert('Ke itumelela go go itse.');" >
+    <h1 style="color:purple; float:center;font-size:300%"> "Nice to meet you" in my native language.</h1>
+	
+	 <button onclick="madume()">Setswana</button>
+   <p id="leina" style = "color:blue;font-size:200%;"> </p>
+   <p style = "color:orange;font-size:200%;">This is in Setswana, one of South African languages</p>
+   <img src="https://th.bing.com/th/id/R7ad7c08446b5cd7398348fab5f15076e?rik=4xRKmLi%2bPIPVSg&riu=http%3a%2f%2fetc.usf.edu%2fclipart%2f72300%2f72336%2f72336_za_flag_col_md.gif&ehk=QAG0oxBFvEatFd7hwjZHV3WHMNd%2f54oVSOeTkZeAF1A%3d&risl=&pid=ImgRaw"/>
+  </body>
+</html>
+
